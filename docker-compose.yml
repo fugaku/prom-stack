@@ -8,10 +8,12 @@ services:
 
   prometheus:
     image: prom/prometheus
+    command: --config.file=/etc/prometheus/prometheus.yml
     ports:
       - 9090:9090
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus-data/:/prometheus/
       - ./prometheus/alerts/:/etc/prometheus/rules.d/
 
   grafana:
@@ -20,6 +22,8 @@ services:
       - 3000:3000
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=P@ssw0rd
+    volumes:
+      - ./grafana-data/:/var/lib/grafana
 
   alertmanager:
     image: prom/alertmanager:v0.11.0
