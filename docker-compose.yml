@@ -34,5 +34,7 @@ services:
       - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
 
   volumes:
-   prometheus-data:
-   grafana-data:
+    prometheus-data:
+      external: true
+    grafana-data:
+      external: true
