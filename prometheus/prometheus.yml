@@ -32,25 +32,20 @@ scrape_configs:
   - job_name: 'demokb'
     metrics_path: /health/prometheus
     static_configs:
-      - targets:
-        - demokb.smartconsultant.co:80
+      - targets: ['demokb.smartconsultant.co:80']
   - job_name: 'uat-ympa'
     metrics_path: /health/prometheus
     static_configs:
-      - targets:
-        - uat.ympa.smartconsultant.co:80
+      - targets: ['uat.ympa.smartconsultant.co:80']
   - job_name: 'uat-ympi'
     metrics_path: /health/prometheus
     static_configs:
-      - targets:
-        - uat.ympi.smartconsultant.co:80
+      - targets: ['uat.ympi.smartconsultant.co:80']
   - job_name: 'ympaonline'
     metrics_path: /health/prometheus
     static_configs:
-      - targets:
-        - ympa.smartconsultant.co:80
+      - targets: ['ympa.smartconsultant.co:80']
   - job_name: 'pecgionline'
     metrics_path: /health/prometheus
     static_configs:
-      - targets:
-        - id-pecgi.com:80
+      - targets: ['id-pecgi.com:80']
