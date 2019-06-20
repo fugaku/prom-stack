@@ -30,5 +30,6 @@ scrape_configs:
         - alertmanager:9093
   - job_name: 'ympaonline'
     metrics_path: '/health/prometheus'
+    scheme: 'https'
     static_configs:
       - targets: ['ympa.smartconsultant.co:80']
