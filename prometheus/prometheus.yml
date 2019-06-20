@@ -33,14 +33,6 @@ scrape_configs:
     metrics_path: /health/prometheus
     static_configs:
       - targets: ['demokb.smartconsultant.co:80']
-  - job_name: 'uat-ympa'
-    metrics_path: /health/prometheus
-    static_configs:
-      - targets: ['uat.ympa.smartconsultant.co:80']
-  - job_name: 'uat-ympi'
-    metrics_path: /health/prometheus
-    static_configs:
-      - targets: ['uat.ympi.smartconsultant.co:80']
   - job_name: 'ympaonline'
     metrics_path: /health/prometheus
     static_configs:
