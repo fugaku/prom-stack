@@ -29,12 +29,28 @@ scrape_configs:
         - pushgateway:9091
         - alertmanager:9093
         - grafana:3000
-  - job_name: 'prom-health'
+  - job_name: 'demokb'
     metrics_path: /health/prometheus
     static_configs:
       - targets:
         - demokb.smartconsultant.co:80
+  - job_name: 'uat-ympa'
+    metrics_path: /health/prometheus
+    static_configs:
+      - targets:
         - uat.ympa.smartconsultant.co:80
+  - job_name: 'uat-ympi'
+    metrics_path: /health/prometheus
+    static_configs:
+      - targets:
         - uat.ympi.smartconsultant.co:80
+  - job_name: 'ympaonline'
+    metrics_path: /health/prometheus
+    static_configs:
+      - targets:
         - ympa.smartconsultant.co:80
+  - job_name: 'pecgionline'
+    metrics_path: /health/prometheus
+    static_configs:
+      - targets:
         - id-pecgi.com:80
