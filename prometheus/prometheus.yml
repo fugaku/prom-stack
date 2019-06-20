@@ -32,4 +32,4 @@ scrape_configs:
     metrics_path: '/health/prometheus'
     scheme: 'https'
     static_configs:
-      - targets: ['ympa.smartconsultant.co:80']
+      - targets: ['ympa.smartconsultant.co']
