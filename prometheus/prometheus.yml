@@ -29,3 +29,8 @@ scrape_configs:
         - pushgateway:9091
         - alertmanager:9093
         - grafana:3000
+  - job_name: 'demokb'
+    metrics_path: /health/prometheus
+    static_configs:
+      - targets:
+        - demokb.smartconsultant.co:80
