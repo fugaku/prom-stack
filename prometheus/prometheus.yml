@@ -28,10 +28,6 @@ scrape_configs:
         - prometheus:9090
         - pushgateway:9091
         - alertmanager:9093
-  - job_name: 'demokb'
-    metrics_path: '/health/prometheus'
-    static_configs:
-      - targets: ['demokb.smartconsultant.co:80']
   - job_name: 'ympaonline'
     metrics_path: '/health/prometheus'
     static_configs:
