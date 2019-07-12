@@ -25,10 +25,8 @@ scrape_configs:
   - job_name: 'prom-stack'
     static_configs:
       - targets:
-        - prometheus:9090
         - pushgateway:9091
         - alertmanager:9093
-        - grafana:3000
   - job_name: 'demokb'
     metrics_path: /health/prometheus
     scheme: 'https'
