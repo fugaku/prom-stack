@@ -44,6 +44,11 @@ scrape_configs:
     scheme: 'https'
     static_configs:
       - targets: ['uat.ympi.smartconsultant.co']
+  - job_name: 'uat-yemi'
+    metrics_path: /health/prometheus
+    scheme: 'https'
+    static_configs:
+      - targets: ['uat.yemi.smartconsultant.co']
   - job_name: 'ympaonline'
     metrics_path: /health/prometheus
     scheme: 'https'
