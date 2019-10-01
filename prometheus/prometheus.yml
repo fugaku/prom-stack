@@ -71,6 +71,16 @@ scrape_configs:
     scheme: 'https'
     static_configs:
       - targets: ['ympa.smartconsultant.co']
+  - job_name: 'mattel1online'
+    metrics_path: /health/prometheus
+    scheme: 'https'
+    static_configs:
+      - targets: ['mattel1.smartconsultant.co']
+  - job_name: 'mattel2online'
+    metrics_path: /health/prometheus
+    scheme: 'https'
+    static_configs:
+      - targets: ['mattel2.smartconsultant.co']
   - job_name: 'pecgionline'
     metrics_path: /health/prometheus
     scheme: 'https'
