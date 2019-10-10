@@ -86,3 +86,18 @@ scrape_configs:
     scheme: 'https'
     static_configs:
       - targets: ['id-pecgi.com']
+  - job_name: 'yemionline'
+    metrics_path: /health/prometheus
+    scheme: 'https'
+    static_configs:
+      - targets: ['yemi.smartconsultant.co']
+  - job_name: 'ymmi1online'
+    metrics_path: /health/prometheus
+    scheme: 'https'
+    static_configs:
+      - targets: ['ymmi1.smartconsultant.co']
+  - job_name: 'ymmi2online'
+    metrics_path: /health/prometheus
+    scheme: 'https'
+    static_configs:
+      - targets: ['ymmi2.smartconsultant.co']
