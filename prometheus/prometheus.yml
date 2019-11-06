@@ -31,41 +31,16 @@ scrape_configs:
     scheme: 'https'
     static_configs:
       - targets: ['demokb.smartconsultant.co']
-  - job_name: 'uat-ympa'
+  - job_name: 'uat-zgi'
     metrics_path: /health/prometheus
     scheme: 'https'
     static_configs:
-      - targets: ['uat.ympa.smartconsultant.co']
+      - targets: ['uat.zgi.smartconsultant.co']
   - job_name: 'uat-ympi'
     metrics_path: /health/prometheus
     scheme: 'https'
     static_configs:
       - targets: ['uat.ympi.smartconsultant.co']
-  - job_name: 'uat-yemi'
-    metrics_path: /health/prometheus
-    scheme: 'https'
-    static_configs:
-      - targets: ['uat.yemi.smartconsultant.co']
-  - job_name: 'uat-ymmi1'
-    metrics_path: /health/prometheus
-    scheme: 'https'
-    static_configs:
-      - targets: ['uat.ymmi1.smartconsultant.co']
-  - job_name: 'uat-ymmi2'
-    metrics_path: /health/prometheus
-    scheme: 'https'
-    static_configs:
-      - targets: ['uat.ymmi2.smartconsultant.co']
-  - job_name: 'uat-mattel1'
-    metrics_path: /health/prometheus
-    scheme: 'https'
-    static_configs:
-      - targets: ['uat.mattel1.smartconsultant.co']
-  - job_name: 'uat-mattel2'
-    metrics_path: /health/prometheus
-    scheme: 'https'
-    static_configs:
-      - targets: ['uat.mattel2.smartconsultant.co']
   - job_name: 'ympaonline'
     metrics_path: /health/prometheus
     scheme: 'https'
@@ -91,6 +66,11 @@ scrape_configs:
     scheme: 'https'
     static_configs:
       - targets: ['yemi.smartconsultant.co']
+  - job_name: 'ympionline'
+    metrics_path: /health/prometheus
+    scheme: 'https'
+    static_configs:
+      - targets: ['ympi.smartconsultant.co']
   - job_name: 'ymmi1online'
     metrics_path: /health/prometheus
     scheme: 'https'
