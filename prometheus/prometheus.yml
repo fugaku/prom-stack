@@ -71,13 +71,13 @@ scrape_configs:
     scheme: 'https'
     static_configs:
       - targets: ['ympi.smartconsultant.co']
-  - job_name: 'ymmi1online'
+  - job_name: 'ymmionline'
     metrics_path: /health/prometheus
     scheme: 'https'
     static_configs:
-      - targets: ['ymmi1.smartconsultant.co']
-  - job_name: 'ymmi2online'
+      - targets: ['ymmi.smartconsultant.co']
+  - job_name: 'indaeko'
     metrics_path: /health/prometheus
     scheme: 'https'
     static_configs:
-      - targets: ['ymmi2.smartconsultant.co']
+      - targets: ['indaeko-kb.smartconsultant.co']
